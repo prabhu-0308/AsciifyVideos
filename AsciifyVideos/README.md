@@ -2,10 +2,33 @@
 ===
 
 
+## PROJECT'S DESCRIPTION: 
+           This Project "Asciify Videos" will take a video file as an input, and then it will asciify each frame of the
+    video i.e replace each pixel of the frame with a suitable coloured ascii character and finally returns the Asciified 
+    version of original video as the output.
 
 
+## How to run the project:
+    We will be needing the following libraries
+        1. PIL (Image, ImageOps, ImageDraw, ImageFont)
+        2. Opencv (cv2)
+        3. numpy 
+        4. os
 
+    Steps to run the program:
+        1. For giving the video of your choice as an input, give the absolute path of the video as an argument inside the 
+    main(absolute_video_path). 
+        2. Now, just run the asciify_videos.py and the output file "final_video.mp4" will automatically be created in 
+    the projects directory.
 
+## Internal Working of the project:
+        1. First, we extract all the frames from the input video ( By calling video_to_images() 
+    function).  
+
+## Learning takeaways from the project
+        I have learnt about a lot of very useful python libraries like PIL (Image, ImageOps, ImageDraw, ImageFont), 
+    opencv, numpy etc while working on the project. I have learnt how to manipulate and process image and 
+## Resources Used 
 **Timeline**
 ---
 - **Week 1 : 28 May - 3 June** 
