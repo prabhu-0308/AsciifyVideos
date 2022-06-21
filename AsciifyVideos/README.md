@@ -1,20 +1,10 @@
-**Asciify : ASCII Art Generator**
+**Asciify Videos : ASCII Video Art Generator**
 ===
 
-ASCII(American Standard Code for Information Interchange) is a common encoding format used for representing strings and text data in computers.
-
-But..what if we use this for something other than text?
-
-How about images? Images on your terminal!
 
 
-**Goal**
----
-Convert images(jpg/png) to ASCII encoded strings, that look like the image.
 
-Here's an example : 
 
-![](https://i.imgur.com/fJsEVJi.png)
 
 **Timeline**
 ---
@@ -45,3 +35,10 @@ Here's an example :
 https://www.analyticsvidhya.com/blog/2021/03/grayscale-and-rgb-format-for-storing-images/)
 - \[Chapter 3] - "Raster Images", Fundamentals of Computer Graphics, Fourth Edition by Steve Marschner & Peter Shirley.
 
+**Goal**
+---
+Convert images(jpg/png) to ASCII encoded strings, that look like the image.
+
+Here's an example : 
+
+![](https://i.imgur.com/fJsEVJi.png)
