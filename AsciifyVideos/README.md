@@ -22,46 +22,38 @@
     the projects directory.
 
 ## Internal Working of the project:
-        1. First, we extract all the frames from the input video ( By calling video_to_images() 
-    function).  
+         First, we extract all the frames from the input video by using cv2.videoCapture() to capture the video and 
+    VideoCaptureObject.read() to separate each frame and store it in InputImages folder. we also notedown fps of video 
+    by using videoCaptureObject.get() function and total number of frames.
+         Now we go through each frame of the video, and in each frame we go through pixel by pixel and map each of 
+    pixel with a suitable ascii character. We also colour the suitable ascii character with the average color of the 
+    pixel and then finally write this character onto output image. we store all these output images in one folder.
+         Finally, we write each frame onto the video using video.write() function and then release the "final_video.mp4" 
+    by using video.release().
 
 ## Learning takeaways from the project
         I have learnt about a lot of very useful python libraries like PIL (Image, ImageOps, ImageDraw, ImageFont), 
-    opencv, numpy etc while working on the project. I have learnt how to manipulate and process image and 
-## Resources Used 
-**Timeline**
----
-- **Week 1 : 28 May - 3 June** 
-    - Introduction to the problem at hand
-    - Basics of image processing
-    - Working with images and turning them into grayscale
+    opencv, numpy etc while working on the project. I have learnt how to manipulate and process images and videos using 
+    PIL and OpenCV libraries. I have also learnt to work with numpy arrays.
+        By Doing this project, I have also learnt that the best way to learn any technical thing is utility based learning
+    i.e get good grasp on things that are required for the project first and then expand your knowledge gradually by doing 
+    more projects in the future as opposed to trying to learn everything about it in the beginning itself.
+    
+## References 
 
-
-- **Week 2 : 4 June - 10 June** 
-    - Implementing the algorithm. 
-    - Get comfortable with the libraries/frameworks required for working with images
-    - Sampling, scaling and transforming images to map pixels to their desired characters
-
-- **Week 3 : 11 June - 17 June** 
-    - Handling Image Aspect Ratio
-    - Adding additional features to your program:
-        - Turn your ASCII art into a pencil sketch
-        - Modify the generated image, .. change it's style etc.
-        - Asciify videos!
-
-### Resources and Suggested Readings
-
-
+- [learnopencv.com](https://learnopencv.com/)
+- [https://www.instructables.com/Turn-Videos-Into-ASCII-Art-Videos/](https://www.instructables.com/Turn-Videos-Into-ASCII-Art-Videos/)
+- [https://www.geeksforgeeks.org/](https://www.geeksforgeeks.org/) for learning about specific library functions
 - [Wiki article on ASCII Art and Images.](https://en.wikipedia.org/wiki/ASCII_art#Types_and_styles)
 - [How digital images are stored in a computer.](https://alekya3.medium.com/how-images-are-stored-in-a-computer-f364d11b4e93)
-- [Another one regarding digital images](
-https://www.analyticsvidhya.com/blog/2021/03/grayscale-and-rgb-format-for-storing-images/)
-- \[Chapter 3] - "Raster Images", Fundamentals of Computer Graphics, Fourth Edition by Steve Marschner & Peter Shirley.
 
-**Goal**
+
+**original video**
 ---
-Convert images(jpg/png) to ASCII encoded strings, that look like the image.
 
-Here's an example : 
 
-![](https://i.imgur.com/fJsEVJi.png)
+
+
+
+**asciified video**
+---
