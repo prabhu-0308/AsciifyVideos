@@ -48,12 +48,9 @@
 - [How digital images are stored in a computer.](https://alekya3.medium.com/how-images-are-stored-in-a-computer-f364d11b4e93)
 
 
-**original video**
----
+## Results
+    Both original video and asciified video are submitted in files section.
+    
+    OriginalVideo: cars.mp4
+    AsciifiedVideo: final_video.mp4
 
-
-
-
-
-**asciified video**
----
